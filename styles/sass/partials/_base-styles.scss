@@ -1,0 +1,29 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 20px;
+    max-width: fit-content;
+    background-color: $red;
+    color: $teal;
+    font-size: 2rem;
+    border: none;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.3s;
+    margin: 0 auto;
+
+    &:hover,
+    &:focus {
+        background-color: $light-teal;
+        color: $red;
+    }
+}

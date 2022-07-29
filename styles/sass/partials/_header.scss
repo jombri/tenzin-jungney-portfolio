@@ -1,0 +1,59 @@
+// Skip Link
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 99;
+    background: $teal;
+    color: $red;
+    &:focus {
+        left: 0;
+    }
+}
+
+header {
+    background-color: $teal;
+    height: 100vh;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // height: inherit;
+
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 25px;
+            color: $red;
+        }
+    }
+    .burger-icon {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: $red;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+    .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+    }
+    .landing-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+}
