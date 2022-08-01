@@ -252,6 +252,7 @@ li,
 a,
 p,
 input,
+figure,
 fieldset {
   margin: 0;
   padding: 0;
@@ -266,7 +267,11 @@ h2 {
 }
 
 h3 {
-  font-size: 3;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
 }
 
 img {
@@ -294,10 +299,11 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 0 auto;
+  cursor: pointer;
 }
 .button:hover, .button:focus {
   background-color: rgb(234, 246, 246);
-  color: rgb(255, 0, 99);
+  color: rgb(102, 191, 191);
 }
 
 .skip-link {
@@ -356,13 +362,73 @@ header nav ul {
   color: rgb(255, 0, 99);
 }
 header .burger-icon {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
   color: rgb(255, 0, 99);
   position: absolute;
   right: 0;
+  height: 0;
+  overflow: hidden;
+}
+header .close-button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  color: rgb(234, 246, 246);
+}
+header .burger-icon,
+header .close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
   cursor: pointer;
+}
+header .slide-out-nav {
+  background-color: rgb(255, 0, 99);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  z-index: 10;
+}
+header .slide-out-nav nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgb(234, 246, 246);
+  max-width: 90%;
+  margin: 25px auto;
+}
+header .show-slide-nav {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+header .slide-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  margin-top: 40%;
+}
+header .slide-content a {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .slide-content a:hover, header .slide-content a:focus {
+  color: rgba(255, 255, 255, 0.5);
 }
 header .landing {
   display: -webkit-box;
@@ -403,4 +469,297 @@ header .landing-content {
 }
 .about p {
   color: rgb(31, 31, 31);
+}
+
+.skills {
+  background-color: rgb(234, 246, 246);
+}
+.skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 100px 0px;
+  color: rgb(255, 0, 99);
+}
+.skills .wrapper h2 {
+  margin-bottom: 50px;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.skills li {
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: rgb(102, 191, 191);
+}
+.skills li:hover {
+  color: rgb(255, 0, 99);
+}
+.skills li span {
+  font-size: 5rem;
+}
+.skills li figcaption {
+  font-size: 1rem;
+}
+.skills li .iconify {
+  font-size: 5rem;
+}
+.skills .firebase-iconify {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.projects {
+  background-color: rgba(102, 191, 191, 0.3);
+}
+.projects .wrapper {
+  text-align: center;
+  padding: 100px 0px;
+}
+.projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projects li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+  padding: 50px 0;
+}
+.projects li:last-of-type {
+  border-bottom: none;
+}
+.projects .project-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  width: 100%;
+}
+.projects .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+  text-align: initial;
+  position: relative;
+}
+.projects .project-title {
+  line-height: initial;
+}
+.projects .tools,
+.projects .project-description {
+  font-size: 1.8rem;
+}
+.projects .tools {
+  margin-bottom: 20px;
+}
+.projects .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.projects .project-links a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(255, 0, 99);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+}
+
+footer {
+  background-color: rgb(102, 191, 191);
+  color: rgb(255, 255, 255);
+}
+footer .wrapper {
+  max-width: 50%;
+  padding: 100px 0;
+}
+footer .wrapper h2 {
+  color: rgb(255, 0, 99);
+  text-align: center;
+}
+footer .wrapper p {
+  text-align: center;
+  margin: 20px 0;
+}
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+footer .social-links li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .social-links li:hover {
+  color: rgb(255, 0, 99);
+}
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+footer fieldset input {
+  line-height: 1.6;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+footer label {
+  text-transform: uppercase;
+}
+footer textarea {
+  padding: 10px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+footer .copyright {
+  background-color: rgb(255, 0, 99);
+  color: rgb(234, 246, 246);
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 1160px) {
+  .projects .tools,
+.projects .project-description {
+    font-size: 1.8rem;
+  }
+  .projects .project-links a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 995px) {
+  .about div {
+    max-width: 80%;
+  }
+  .projects .tools,
+.projects .project-description {
+    font-size: 1.6rem;
+  }
+  .projects .project-links a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 885px) {
+  header .landing-content {
+    text-align: center;
+  }
+  header .landing-content h1 {
+    font-size: 6rem;
+  }
+  header .landing-content h3 {
+    font-size: 2.5rem;
+  }
+  header .landing-content .button {
+    padding: 10px 20px;
+  }
+  .projects li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects li .project-img {
+    margin-bottom: 20px;
+  }
+  .projects li .project-description {
+    margin-bottom: 20px;
+  }
+  .projects li .project-links {
+    position: static;
+  }
+}
+@media (max-width: 500px) {
+  header .nav-links {
+    height: 0;
+    overflow: hidden;
+  }
+  header .burger-icon {
+    overflow: visible;
+  }
+  header .landing-content {
+    text-align: center;
+  }
+  header .landing-content h1 {
+    font-size: 4rem;
+  }
+  header .landing-content h3 {
+    font-size: 2rem;
+  }
+  header .landing-content .button {
+    padding: 5px 15px;
+  }
+  footer .wrapper {
+    max-width: 80%;
+  }
 }

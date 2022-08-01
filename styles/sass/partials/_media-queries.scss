@@ -1,0 +1,86 @@
+
+@media (max-width: 1160px) {
+    .projects {
+        .tools,
+        .project-description {
+            font-size: 1.8rem;
+        }
+        .project-links a {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 995px) {
+    .about div {
+        max-width: 80%;
+    }
+    .projects {
+        .tools,
+        .project-description {
+            font-size: 1.6rem;
+        }
+        .project-links a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 885px) {
+    header {
+        .landing-content {
+            text-align: center;
+            h1 {
+                font-size: 6rem;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+            .button {
+                padding: 10px 20px;
+            }
+        }
+    }
+    .projects li {
+        display: flex;
+        flex-direction: column;
+        .project-img {
+            margin-bottom: 20px;
+        }
+        .project-description {
+            margin-bottom: 20px;
+        }
+        .project-links {
+            position: static;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        .nav-links {
+            height: 0;
+            overflow: hidden;
+        }      
+         .burger-icon {
+            // height: auto;
+            overflow: visible;
+        }
+        .landing-content {
+            text-align: center;
+            h1 {
+                font-size: 4rem;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+            .button {
+                padding: 5px 15px;
+            }
+        }
+}
+
+footer .wrapper {
+    max-width: 80%;
+}
+}

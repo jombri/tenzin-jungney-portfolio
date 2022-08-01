@@ -1,6 +1,5 @@
 
 // About Me
-
 .about {
     background-color: $white;
     // padding: 50px 100px;
@@ -14,5 +13,103 @@
     }
     p {
         color: $black;
+    }
+}
+// Skills
+.skills {
+    background-color: $light-teal;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 0px;
+        color: $red;
+        h2 {
+                margin-bottom: 50px;
+            }
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    li {
+        text-align: center;
+        transition: 0.3s;
+        color: $teal;
+        &:hover {
+            color: $red;
+        }
+        span {
+            font-size: 5rem;
+        }
+        figcaption {
+            font-size: 1rem;
+        }
+        .iconify {
+            font-size: 5rem;
+        }
+    }
+    .firebase-iconify {
+        align-self: center;
+    }
+}
+// Projects
+.projects {
+    background-color: rgba($color: $teal, $alpha: 0.3);
+    .wrapper {
+        text-align: center;
+        padding: 100px 0px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px $white solid;
+        padding: 50px 0;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    .project-img {
+        flex: 0 1 48%;
+        width: 100%;
+    }
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 48%;
+        text-align: initial;
+        position: relative;
+    }
+    .project-title {
+        line-height: initial;
+    }
+    .tools,
+    .project-description {
+        font-size: 1.8rem;
+    }
+    .tools {
+        margin-bottom: 20px;
+    }
+    .project-links {
+        display: flex;
+        column-gap: 10px;
+        position: absolute;
+        bottom: 0;
+        a {
+            width: fit-content;
+            background-color: $red;
+            color: $white;
+            padding: 5px 20px;
+        }
     }
 }

@@ -1,0 +1,55 @@
+footer {
+    background-color: $teal;
+    color: $white;
+    .wrapper {
+    max-width: 50%;
+    padding: 100px 0;
+    h2 {
+        color: $red;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    li {
+        transition: 0.3s;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    input {
+        line-height: 1.6;
+        padding-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+label {
+    text-transform: uppercase;
+}
+textarea {
+    padding: 10px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.copyright {
+    background-color: $red;
+    color: $light-teal;
+    text-align: center;
+    padding: 10px 0;
+}
+}

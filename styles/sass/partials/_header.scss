@@ -36,13 +36,65 @@ header {
         }
     }
     .burger-icon {
-        background-color: transparent;
-        border: none;
-        font-size: 2rem;
         color: $red;
         position: absolute;
         right: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .close-button {
+        align-self: flex-end;
+        background-color: transparent;
+        color: $light-teal;
+        
+    }
+    .burger-icon,
+    .close-button {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
         cursor: pointer;
+
+    }
+    
+    .slide-out-nav {
+        background-color: $red;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 500px;
+        height: 100vh;
+        // padding: 35px 50px;
+        transition: 0.75s;
+        transform: translate(100%); 
+        z-index: 10;
+        nav {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: $light-teal;
+            max-width: 90%;
+            margin: 25px auto;
+        }
+    }
+    .show-slide-nav {
+        transform: translate(0);
+    }
+    .slide-content {
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 40%;
+        a {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: rgba($color: $white, $alpha: 1);
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                color: rgba($color: $white, $alpha: 0.5);
+            }
+        }
     }
     .landing {
         display: flex;

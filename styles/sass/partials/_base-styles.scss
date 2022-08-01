@@ -20,10 +20,10 @@ img {
     text-align: center;
     transition: 0.3s;
     margin: 0 auto;
-
+    cursor: pointer;
     &:hover,
     &:focus {
         background-color: $light-teal;
-        color: $red;
+        color: $teal;
     }
 }

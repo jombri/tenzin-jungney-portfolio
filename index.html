@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/3e3f2f5719.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <title>Tenzin Jungney</title>
 </head>
 <body>
@@ -25,6 +26,21 @@
                 <button class="burger-icon">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <!-- Slide out Nav Content -->
+                <aside class="slide-out-nav">
+                    <nav>
+                        <button class="close-button">
+                        <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="slide-content">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </aside>
             </nav>
         </div>
         <div class="wrapper landing">
@@ -38,27 +54,147 @@
     <!-- MAIN -->
     <main id="main-content">
         <!-- About Me -->
-        <section class="about">
+        <section id="about" class="about">
             <div>
                 <h2>about me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, molestias illum numquam libero veniam ratione! Saepe porro dolorem magnam eaque modi laborum nesciunt dicta, excepturi asperiores nemo rerum sequi suscipit.</p>
             </div>
         </section>
         <!-- Skills -->
-        <section class="skills">
-            <div>
+        <section id="skills" class="skills">
+            <div class="wrapper">
                 <h2>skills</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-html5"></i></span>
+                        </figure>
+                        <figcaption>HTML</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-css3-alt"></i></span>
+                        </figure>
+                        <figcaption>CSS</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-sass"></i></span>
+                        </figure>
+                        <figcaption>SASS</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-square-js"></i></span>
+                        </figure>
+                        <figcaption>JAVASCRIPT</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-react"></i></span>
+                        </figure>
+                        <figcaption>REACT</figcaption>
+                    </li>
+                    <li>
+                        <figure>
+                            <span><i class="fa-brands fa-github"></i></span>
+                        </figure>
+                        <figcaption>GIT / GITHUB</figcaption>
+                    </li>
+                    <li class="firebase-iconify">
+                        <figure>
+                            <span class="iconify" data-icon="simple-icons:firebase"></span>
+                        </figure>
+                        <figcaption>FIREBASE</figcaption>
+                    </li>
                 </ul>
             </div>
         </section>
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="wrapper">
+                <h2>projects</h2>
+                <ul>
+                    <li>
+                        <div class="project-img">
+                            <img src="./assets/movieboxloop.png" alt="a screenshot of web app displaying all the movies with the title related to 'fight club' that was searched.">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">movieboxloop</h4>
+                            <p class="tools">HTML, CSS, JAVASCRIPT, API</p>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum perspiciatis illum. Consequatur cupiditate,
+                                ut modi quisquam laudantium, molestiae, commodi asperiores ipsa voluptatibus quia iusto unde. Quo ratione alias
+                                odio.</p>
+                            <div class="project-links">
+                                <a href="https://tenzin-jungney-project-one.netlify.app/">view live</a>
+                                <a href="https://github.com/Movie-APP-Project2-Juno/movieboxloop.git">view code</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-img">
+                            <img src="./assets/willow.png" alt="a landing webpage with a woman in yellow jacket">
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-title">willow</h4>
+                            <p class="tools">HTML, CSS, JAVASCRIPT</p>
+                            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum perspiciatis illum. Consequatur cupiditate, ut modi quisquam laudantium, molestiae, commodi asperiores ipsa voluptatibus quia iusto unde. Quo ratione alias odio.</p>
+                            <div class="project-links">
+                                <a href="https://tenzin-jungney-project-one.netlify.app/">view live</a>
+                                <a href="https://github.com/jombri/tenzin-jungney-project-one.git">view code</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer & Form -->
+        <footer id="contact">
+            <div class="wrapper">
+                <h2>get in touch</h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jombri">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:tenzinjungney@protonmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora quos aperiam? Nobis veniam fugit, accusamus perspiciatis ducimus possimus veritatis, dignissimos ipsa debitis explicabo mollitia consequuntur sit dolorum in soluta.</p>
+                <!-- Form -->
+                <form action="">
+                    <fieldset>
+                        <label for="name">name</label>
+                        <input type="text" id="name">
+
+                        <label for="email">email address</label>
+                        <input type="email" id="email" required>
+                    </fieldset>
+
+                    <label for="message">message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button class="button">submit</button>
+                </form>
+            </div>
+            <p class="copyright">© Tenzin Jungney</p>
+        </footer>
     </main>
+    <!-- javaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
