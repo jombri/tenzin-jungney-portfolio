@@ -228,6 +228,7 @@ html {
 
 body {
   font-size: 2rem;
+  font-family: "Comfortaa", cursive, sans-serif;
 }
 
 ul {
@@ -260,14 +261,17 @@ fieldset {
 
 h1 {
   font-size: 8rem;
+  font-family: "Stalemate", cursive;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 6rem;
+  font-family: "Stalemate", cursive;
 }
 
 h3 {
   font-size: 3rem;
+  font-family: "Comfortaa", cursive, sans-serif;
 }
 
 h4 {
@@ -348,7 +352,7 @@ header nav {
   margin-top: 25px;
   position: relative;
 }
-header nav ul {
+header .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,6 +364,15 @@ header nav ul {
      -moz-column-gap: 25px;
           column-gap: 25px;
   color: rgb(255, 0, 99);
+  font-weight: 600;
+}
+header .nav-links li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .nav-links li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 header .burger-icon {
   color: rgb(255, 0, 99);
@@ -454,6 +467,7 @@ header .landing-content {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 10px;
+  color: rgb(255, 255, 240);
 }
 
 .about {
@@ -538,6 +552,9 @@ header .landing-content {
   text-align: center;
   padding: 100px 0px;
 }
+.projects .wrapper h2 {
+  color: rgb(0, 139, 139);
+}
 .projects ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,9 +625,14 @@ header .landing-content {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgb(255, 0, 99);
+  background-color: rgba(255, 0, 99, 0.4);
   color: rgb(255, 255, 255);
   padding: 5px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.projects .project-links a:hover {
+  background-color: rgb(255, 0, 99);
 }
 
 footer {

@@ -17,9 +17,6 @@ header {
     .wrapper {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // height: inherit;
-
     }
     nav {
         display: flex;
@@ -28,11 +25,18 @@ header {
         align-items: center;
         margin-top: 25px;
         position: relative;
-        ul {
-            display: flex;
-            flex-direction: row;
-            column-gap: 25px;
-            color: $red;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+        color: $red;
+        font-weight: 600;
+        li {
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.5);
+            }
         }
     }
     .burger-icon {
@@ -65,7 +69,6 @@ header {
         width: 100%;
         max-width: 500px;
         height: 100vh;
-        // padding: 35px 50px;
         transition: 0.75s;
         transform: translate(100%); 
         z-index: 10;
@@ -107,5 +110,6 @@ header {
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
+        color: $ivory;
     }
 }

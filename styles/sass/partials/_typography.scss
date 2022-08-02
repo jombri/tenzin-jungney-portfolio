@@ -5,6 +5,7 @@ html {
 
 body {
     font-size: $base-font-small;
+    font-family: $body-font;
 }
 
 
@@ -21,7 +22,6 @@ h1,
 h2,
 h3,
 h4 {
-    // font-family: $heading-font;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -39,12 +39,15 @@ fieldset {
 
 h1 {
     font-size: 8rem;
+    font-family: $heading-font;
 }
 h2 {
-    font-size: 5rem;
+    font-size: 6rem;
+    font-family: $heading-font;
 }
 h3 {
     font-size: 3rem;
+    font-family: $body-font;
 }
 h4 {
     font-size: 2.5rem;
