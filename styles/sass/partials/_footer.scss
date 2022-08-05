@@ -36,6 +36,7 @@ fieldset {
         line-height: 1.6;
         padding-left: 10px;
         margin-bottom: 15px;
+        font-family: $body-font;
     }
 }
 label {
@@ -45,8 +46,9 @@ textarea {
     padding: 10px;
     line-height: 1.4;
     margin-bottom: 15px;
+    font-family: $body-font;
 }
-.copyright {
+.design {
     background-color: $red;
     color: $light-teal;
     text-align: center;

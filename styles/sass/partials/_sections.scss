@@ -2,16 +2,17 @@
 // About Me
 .about {
     background-color: $white;
-    text-align: center;
+    // text-align: center;
     div {
         max-width: 50%;
         margin: 100px auto;
     }
     h2 {
         color: teal;
+        text-align: center;
     }
     p {
-        color: $black;
+        margin-bottom: 2rem;
     }
 }
 // Skills

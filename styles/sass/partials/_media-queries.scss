@@ -11,6 +11,18 @@
     }
 }
 
+@media (max-width: 1120px) {
+    .projects {
+        .tools,
+        .project-description {
+            font-size: 1.6rem;
+        }
+        .project-links a {
+            font-size: 1.6rem;
+        }
+        }
+}
+
 @media (max-width: 995px) {
     .about div {
         max-width: 80%;

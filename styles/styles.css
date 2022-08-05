@@ -227,7 +227,7 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Comfortaa", cursive, sans-serif;
 }
 
@@ -472,7 +472,6 @@ header .landing-content {
 
 .about {
   background-color: rgb(255, 255, 255);
-  text-align: center;
 }
 .about div {
   max-width: 50%;
@@ -480,9 +479,10 @@ header .landing-content {
 }
 .about h2 {
   color: teal;
+  text-align: center;
 }
 .about p {
-  color: rgb(31, 31, 31);
+  margin-bottom: 2rem;
 }
 
 .skills {
@@ -692,6 +692,7 @@ footer fieldset input {
   line-height: 1.6;
   padding-left: 10px;
   margin-bottom: 15px;
+  font-family: "Comfortaa", cursive, sans-serif;
 }
 footer label {
   text-transform: uppercase;
@@ -700,8 +701,9 @@ footer textarea {
   padding: 10px;
   line-height: 1.4;
   margin-bottom: 15px;
+  font-family: "Comfortaa", cursive, sans-serif;
 }
-footer .copyright {
+footer .design {
   background-color: rgb(255, 0, 99);
   color: rgb(234, 246, 246);
   text-align: center;
@@ -715,6 +717,15 @@ footer .copyright {
   }
   .projects .project-links a {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 1120px) {
+  .projects .tools,
+.projects .project-description {
+    font-size: 1.6rem;
+  }
+  .projects .project-links a {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 995px) {
