@@ -25,6 +25,7 @@ header {
         align-items: center;
         margin-top: 25px;
         position: relative;
+        background-color: $teal;
     }
     .nav-links {
         display: flex;
@@ -32,6 +33,7 @@ header {
         column-gap: 25px;
         color: $red;
         font-weight: 600;
+        position: fixed;
         li {
             transition: 0.3s;
             &:hover {
@@ -41,8 +43,8 @@ header {
     }
     .burger-icon {
         color: $red;
-        position: absolute;
-        right: 0;
+        position: fixed;
+        right: 5%;
         height: 0;
         overflow: hidden;
     }
@@ -111,5 +113,21 @@ header {
         align-items: center;
         row-gap: 10px;
         color: $ivory;
+    }
+    .quote {
+        text-align: center;
+        line-height: 1;
+        span {
+           &::before,
+           &::after {
+               content: "\201c";
+               font-size: 5rem;
+               display: inline-block;
+           }
+       }
+    }
+    .quoter {
+        align-self: end;
+        font-size: 3rem;
     }
 }

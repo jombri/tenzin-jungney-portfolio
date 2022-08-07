@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,11 +225,12 @@ template {
 html {
   font-size: 62.5%;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.8rem;
-  font-family: "Comfortaa", cursive, sans-serif;
+  font-size: 2rem;
+  font-family: "Imprima", sans-serif;
 }
 
 ul {
@@ -271,11 +273,15 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  font-family: "Comfortaa", cursive, sans-serif;
+  font-family: "Imprima", sans-serif;
 }
 
 h4 {
   font-size: 2.5rem;
+}
+
+q {
+  font-size: 2rem;
 }
 
 img {
@@ -351,6 +357,7 @@ header nav {
           align-items: center;
   margin-top: 25px;
   position: relative;
+  background-color: rgb(102, 191, 191);
 }
 header .nav-links {
   display: -webkit-box;
@@ -365,6 +372,7 @@ header .nav-links {
           column-gap: 25px;
   color: rgb(255, 0, 99);
   font-weight: 600;
+  position: fixed;
 }
 header .nav-links li {
   -webkit-transition: 0.3s;
@@ -376,8 +384,8 @@ header .nav-links li:hover {
 }
 header .burger-icon {
   color: rgb(255, 0, 99);
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 5%;
   height: 0;
   overflow: hidden;
 }
@@ -468,6 +476,20 @@ header .landing-content {
           align-items: center;
   row-gap: 10px;
   color: rgb(255, 255, 240);
+}
+header .quote {
+  text-align: center;
+  line-height: 1;
+}
+header .quote span::before, header .quote span::after {
+  content: "“";
+  font-size: 5rem;
+  display: inline-block;
+}
+header .quoter {
+  -ms-flex-item-align: end;
+      align-self: end;
+  font-size: 3rem;
 }
 
 .about {
@@ -692,7 +714,7 @@ footer fieldset input {
   line-height: 1.6;
   padding-left: 10px;
   margin-bottom: 15px;
-  font-family: "Comfortaa", cursive, sans-serif;
+  font-family: "Imprima", sans-serif;
 }
 footer label {
   text-transform: uppercase;
@@ -701,7 +723,7 @@ footer textarea {
   padding: 10px;
   line-height: 1.4;
   margin-bottom: 15px;
-  font-family: "Comfortaa", cursive, sans-serif;
+  font-family: "Imprima", sans-serif;
 }
 footer .design {
   background-color: rgb(255, 0, 99);
