@@ -1,104 +1,25 @@
-// Skip Link
-.skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 99;
-    background: $teal;
-    color: $red;
-    &:focus {
+header {
+    background-image: url('../../../assets/heart-pebble.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        // background-color: rgba($color: $black, $alpha: 0.2);
+        background-image: linear-gradient(45deg, rgba($color: $teal, $alpha: 0.3), rgba($color: $red, $alpha: 0.3));
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        position: absolute;
+        top: 0;
         left: 0;
     }
-}
-
-header {
-    background-color: $teal;
-    height: 100vh;
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
+    > * {
+        z-index: 4;
         position: relative;
-    }
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        column-gap: 25px;
-        color: $red;
-        font-weight: 600;
-        position: fixed;
-        li {
-            transition: 0.3s;
-            &:hover {
-                transform: scale(1.5);
-            }
-        }
-    }
-    .burger-icon {
-        color: $red;
-        position: fixed;
-        right: 5%;
-        height: 0;
-        overflow: hidden;
-    }
-    .close-button {
-        align-self: flex-end;
-        background-color: transparent;
-        color: $light-teal;
-        
-    }
-    .burger-icon,
-    .close-button {
-        background-color: transparent;
-        border: none;
-        font-size: 2rem;
-        cursor: pointer;
-
-    }
-    
-    .slide-out-nav {
-        background-color: $red;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        max-width: 500px;
-        height: 100vh;
-        transition: 0.75s;
-        transform: translate(100%); 
-        z-index: 10;
-        nav {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            color: $light-teal;
-            max-width: 90%;
-            margin: 25px auto;
-        }
-    }
-    .show-slide-nav {
-        transform: translate(0);
-    }
-    .slide-content {
-        flex-direction: column;
-        row-gap: 10px;
-        margin-top: 40%;
-        a {
-            font-size: 1.6rem;
-            line-height: 2.5rem;
-            color: rgba($color: $white, $alpha: 1);
-            transition: 0.3s;
-            &:hover,
-            &:focus {
-                color: rgba($color: $white, $alpha: 0.5);
-            }
-        }
     }
     .landing {
         display: flex;
@@ -127,6 +48,6 @@ header {
     }
     .quoter {
         align-self: end;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }

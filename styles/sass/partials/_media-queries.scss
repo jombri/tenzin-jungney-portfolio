@@ -69,30 +69,32 @@
 }
 
 @media (max-width: 500px) {
-    header {
+    .nav-bar .wrapper {
+        // height: 47px;
+        justify-content: space-between;
         .nav-links {
             height: 0;
             overflow: hidden;
         }      
          .burger-icon {
-            // height: auto;
+            height: auto;
             overflow: visible;
         }
-        .landing-content {
-            text-align: center;
-            h1 {
-                font-size: 4rem;
-            }
-            h3 {
-                font-size: 2rem;
-            }
-            .button {
-                padding: 5px 15px;
-            }
+    }
+    .landing-content {
+        text-align: center;
+        h1 {
+            font-size: 4rem;
         }
-}
+        h3 {
+            font-size: 2rem;
+        }
+        .button {
+            padding: 5px 15px;
+        }
+    }
 
-footer .wrapper {
-    max-width: 80%;
-}
+    footer .wrapper {
+        max-width: 80%;
+    }
 }

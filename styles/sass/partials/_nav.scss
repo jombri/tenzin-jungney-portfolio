@@ -1,0 +1,103 @@
+// Skip Link
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    background-color: $teal;
+    color: $red;
+    z-index: 99;
+
+    &:focus {
+        left: 0;
+    }
+}
+// Nav-bar
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: $teal;
+    z-index: 6;
+    .wrapper {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        color: $red;
+        font-weight: 600;
+
+        li {
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+    .burger-icon {
+        height: 0;
+        overflow: hidden;
+    }
+    .toggle-look {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: $white;
+        // position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .slide-out-nav {
+        background-color: $red;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        max-width: 500px;
+        height: 100vh;
+        transition: 0.75s;
+        transform: translate(100%);
+
+        nav {
+            // position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $light-teal;
+            max-width: 90%;
+            margin: 10px auto;
+        }
+        .close-button {
+            align-self: flex-end;
+        }
+    }
+
+    .show-slide-nav {
+        transform: translate(0);
+    }
+
+    .slide-content {
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 40%;
+
+        a {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: rgba($color: $white, $alpha: 1);
+            transition: 0.3s;
+
+            &:hover,
+            &:focus {
+                color: rgba($color: $white, $alpha: 0.5);
+            }
+        }
+    }
+}

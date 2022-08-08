@@ -56,6 +56,12 @@
     }
     .firebase-iconify {
         align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        figure {
+            margin-top: 10px;
+        }
     }
 }
 // Projects
@@ -114,6 +120,7 @@
             color: $white;
             padding: 5px 20px;
             transition: 0.3s;
+            border-radius: 5px;
             &:hover {
                 background-color: $red;
             }
