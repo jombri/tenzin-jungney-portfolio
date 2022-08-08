@@ -262,7 +262,7 @@ fieldset {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: "Stalemate", cursive;
 }
 
@@ -487,6 +487,10 @@ header .landing-content {
           align-items: center;
   row-gap: 10px;
   color: rgb(255, 255, 240);
+}
+header .header-name {
+  font-size: 9rem;
+  text-shadow: 5px 5px rgb(102, 191, 191);
 }
 header .quote {
   text-align: center;

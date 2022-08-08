@@ -34,6 +34,11 @@ header {
         row-gap: 10px;
         color: $ivory;
     }
+    .header-name {
+        font-size: 9rem;
+        text-shadow: 5px 5px $teal;
+
+    }
     .quote {
         text-align: center;
         line-height: 1;
