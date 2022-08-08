@@ -48,7 +48,6 @@
         border: none;
         font-size: 2rem;
         color: $white;
-        // position: absolute;
         right: 0;
         cursor: pointer;
     }
@@ -65,7 +64,6 @@
         transform: translate(100%);
 
         nav {
-            // position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
