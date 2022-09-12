@@ -791,7 +791,7 @@ footer .design {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 885px) {
+@media (max-width: 920px) {
   header .landing-content {
     text-align: center;
   }
@@ -815,6 +815,14 @@ footer .design {
   }
   .projects li .project-img {
     margin-bottom: 20px;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  .projects li .project-info {
+    -webkit-box-ordinal-group: 21;
+        -ms-flex-order: 20;
+            order: 20;
   }
   .projects li .project-description {
     margin-bottom: 20px;
