@@ -668,8 +668,6 @@ header .quoter {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  position: absolute;
-  bottom: 0;
 }
 .projects .project-links a {
   width: -webkit-fit-content;
@@ -684,6 +682,16 @@ header .quoter {
 }
 .projects .project-links a:hover {
   background-color: rgb(255, 0, 99);
+}
+.projects .to-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.projects .to-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer {
