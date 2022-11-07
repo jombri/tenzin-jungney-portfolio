@@ -16,6 +16,12 @@
 <body>
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content.</a>
+
+    <!-- To the Top button -->
+    <button id="roll-up-btn" onclick="scrollToTop()"> 
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+
     <!-- Navigation -->
     <nav class="nav-bar">
         <div class="wrapper">
@@ -31,37 +37,45 @@
             </button>
             <!-- Slide out Nav Content -->
             <aside class="slide-out-nav">
-                <nav>
-                    <button class="close-button toggle-look">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <ul class="slide-content">
-                        <li><a href="#home" >Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="wrapper">
+                    <nav>
+                        <button class="close-button toggle-look">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="slide-content">
+                            <li><a href="#home" >Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </aside>
         </div>
     </nav>
     <!-- Header -->
     <header>
-        <div class="wrapper landing">
-            <section class="landing-content">
-                <h1>Hi! I'm <span class="header-name">Tenzin.</span></h1>
+        <div class="wrapper">
+            <div class="greet-tag">
+                <h2><span id="greet"></span>Hi! I'm</h2>
+                <h1 class="name-box">Tenzin</h1>
+            </div>
+            <div class="snapshot">
                 <h3>Toronto based web developer</h3>
-                <h3 class="quote"> 
-                    <span>
+                <h3>Critical Thinker 🤔</h3>
+                <h3>Animal Lover 🐶</h3>
+                <h3>Meditation 🧘🏻‍♂️</h3>
+                <h3>Sports ⚽️</h3>
+                <h3>Meme 🙃</h3>
+            </div>
+            <a href="#contact" class="button">get in touch</a>
+            <div class="quote-box">
+                <h3 class="quote">
                         The true sign of intelligence is not knowledge, but imagination.
-                    </span> 
                 </h3>
                 <span class="quoter">- A.E = <var>mc<sup>2</sup></var></span>
-                
-                <a href="#contact" class="button">get in touch</a>
-                
-            </section>
+            </div>
         </div>
     </header>
     <!-- MAIN -->
@@ -76,10 +90,10 @@
             </div>
         </section>
         <!-- Skills -->
-        <section id="skills" class="skills">
+        <section class="skills">
             <div class="wrapper">
                 <h2>skills</h2>
-                <ul>
+                <ul class="skill-list from-bottom">
                     <li>
                         <figure>
                             <span><i class="fa-brands fa-html5"></i></span>
@@ -131,11 +145,11 @@
                 <h2>projects</h2>
                 <ul>
                     <li>
-                        <div class="project-img">
+                        <div class="project-img from-left">
                             <img src="./assets/concert-accountant.png"
                                 alt="a screenshot of web app displaying all the events that user searches for.">
                         </div>
-                        <div class="project-info">
+                        <div class="project-info from-right">
                             <h4 class="project-title">Concert Accountant</h4>
                             <p class="tools">React, Firebase, RESTful API</p>
                             <p class="project-description">This app can search events using the Ticketmaster API, and let's users set a budget and name the list, that users have the option to keep it private or publish it to public.  This app was created in collaboration with Elijah Walker, Kwabena and Larry Ho.</p>
@@ -146,7 +160,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="project-info">
+                        <div class="project-info from-left">
                             <h4 class="project-title">NBA Baller info.</h4>
                             <p class="tools">React, RESTful API</p>
                             <p class="project-description">A react app that uses <em>balldontlie</em> API to fetch all the NBA players that matches either the first name or the last or both, that user searches for with what team they are curently on.</p>
@@ -155,15 +169,15 @@
                                 <a href="https://github.com/jombri/tenzin-jungney-project-three.git">view code</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img from-right">
                             <img src="./assets/baller-info.png" alt="a screenshot of web app displaying all the NBA players that has Davis as their either first name or last or both.">
                         </div>
                     </li>
                     <li>
-                        <div class="project-img">
+                        <div class="project-img from-left">
                             <img src="./assets/movieboxloop.png" alt="a screenshot of web app displaying all the movies with the title related to 'fight club' that was searched.">
                         </div>
-                        <div class="project-info">
+                        <div class="project-info from-right">
                             <h4 class="project-title">movieboxloop</h4>
                             <p class="tools">HTML, CSS, JAVASCRIPT, API</p>
                             <p class="project-description">This movie app can search movie using the TMDB API, and displays upto 8 related movies along with some of their respective common infos. such as movie title, year, rating etc. This app was created in collaboration with wonderful Wendi Zhang. </p>
@@ -174,7 +188,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="project-info">
+                        <div class="project-info from-left">
                             <h4 class="project-title">daily musings of willow</h4>
                             <p class="tools">HTML, CSS, JAVASCRIPT</p>
                             <p class="project-description">A mulit-page PSD conversion that is responsive across all devices.</p>
@@ -183,7 +197,7 @@
                                 <a href="https://github.com/jombri/tenzin-jungney-project-one.git">view code</a>
                             </div>
                         </div>
-                        <div class="project-img">
+                        <div class="project-img from-right">
                             <img src="./assets/willow.png" alt="a landing webpage with a woman in yellow jacket">
                         </div>
                     </li>
@@ -218,7 +232,7 @@
                 </ul>
                 <p>Thank you for your time! If you are interested for a quick friendly chat, I would love that! You can find me on my social media or send me a message here!</p>
                 <!-- Form -->
-                <form action="">
+                <form action="" class="from-bottom">
                     <fieldset>
                         <label for="name" class="sr-only">name</label>
                         <input type="text" id="name" placeholder="name">
@@ -237,6 +251,6 @@
         </footer>
     </main>
     <!-- javaScript -->
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
