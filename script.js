@@ -1,4 +1,4 @@
-
+/* Aside navigation menu */
 const burgerIcon = document.querySelector('.burger-icon');
 const closeButton = document.querySelector('.close-button');
 const slideOutNav = document.querySelector('.slide-out-nav');
@@ -17,6 +17,19 @@ menuLinks.forEach((menuLink) => {
     })
 });
 
+/* Greeting feature */
+const greeting = {
+    english: {
+        greet: "Hi!",
+        name: "Jungney"
+    },
+    english: {
+        greet: "Tashi Delek!",
+        name: "Jungney"
+    }
+
+};
+
 /* scroll to top */
 const rollUpBtn = document.getElementById('roll-up-btn');
 window.addEventListener("scroll", scrollUpFn);
@@ -33,6 +46,7 @@ function scrollToTop() {
     window.scrollTo(0, 0); 
 };
 
+/* Section scroll animation */
 const fromBottom = document.querySelectorAll('.from-bottom');
 const fromLeft = document.querySelectorAll('.from-left');
 const fromRight = document.querySelectorAll('.from-right');

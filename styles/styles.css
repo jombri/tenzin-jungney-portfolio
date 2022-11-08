@@ -556,10 +556,15 @@ header .wrapper .greet-tag {
   background-color: crimson;
   color: white;
   margin-top: 30px;
+  font-family: "Fuzzy Bubbles", cursive;
 }
 header .wrapper .greet-tag h1 {
   background-color: white;
   color: black;
+  font-family: inherit;
+}
+header .wrapper .greet-tag h2 {
+  font-family: inherit;
 }
 header .wrapper span.fade {
   -webkit-animation-iteration-count: infinite;
