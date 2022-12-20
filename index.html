@@ -58,7 +58,8 @@
     <header>
         <div class="wrapper">
             <div class="greet-tag">
-                <h2><span id="greet"></span>Hi! I'm</h2>
+                <h2 id="greet"></h2> 
+                <span>I'm</span> 
                 <h1 class="name-box">Tenzin</h1>
             </div>
             <div class="snapshot">
@@ -232,25 +233,29 @@
                 </ul>
                 <p>Thank you for your time! If you are interested for a quick friendly chat, I would love that! You can find me on my social media or send me a message here!</p>
                 <!-- Form -->
-                <form action="" class="from-bottom">
+                <form 
+                    action="https://formspree.io/f/meqdywlr"
+                    method="POST" 
+                    class="from-bottom">
                     <fieldset>
                         <label for="name" class="sr-only">name</label>
-                        <input type="text" id="name" placeholder="name">
+                        <input type="text" name="name" id="name" placeholder="name">
 
                         <label for="email" class="sr-only">email address</label>
-                        <input type="email" id="email" placeholder="email" required>
+                        <input type="email" name="email" id="email" placeholder="email" required>
                     </fieldset>
 
                     <label for="message" class="sr-only">message</label>
-                    <textarea id="message" cols="30" rows="10" placeholder="message"></textarea>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="message" required></textarea>
 
-                    <button class="button">SEND</button>
+                    <button type="submit" class="button">SEND</button>
                 </form>
             </div>
             <p class="design">Designed by Tenzin Jungney</p>
         </footer>
     </main>
     <!-- javaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="script.js"></script>
 </body>
 </html>

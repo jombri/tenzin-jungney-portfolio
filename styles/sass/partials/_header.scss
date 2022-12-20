@@ -1,6 +1,5 @@
 header {
     background: linear-gradient(to bottom, $grey-light, 80%, $white);
-    // height: 93vh;
 
     .wrapper {
         height: inherit;
@@ -23,11 +22,14 @@ header {
             h1 {
                 background-color: white;
                 color: black;
-                font-family: inherit;
             }
-            h2 {
-                font-family: inherit;
+            #greet {
+                font-size: 5rem;
             }
+            span {
+                font-size: 4rem;
+            }
+
         }
 
         span.fade {

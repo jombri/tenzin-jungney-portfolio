@@ -17,18 +17,25 @@ menuLinks.forEach((menuLink) => {
     })
 });
 
-/* Greeting feature */
-const greeting = {
-    english: {
-        greet: "Hi!",
-        name: "Jungney"
-    },
-    english: {
-        greet: "Tashi Delek!",
-        name: "Jungney"
-    }
+// Create an array of items to display
+const greetings = ["Hi!", "Tashi Delek!", "Namaste!", "Hola!", "Ohayo!", "Hallo!"];
 
-};
+let i = 0;
+
+// Set an interval timer to run every 5 seconds
+setInterval(function() {
+  
+  const currentItem = greetings[i];
+  
+  $("#greet").html(currentItem);
+  
+  i++;
+  
+  if (i >= greetings.length) {
+    i = 0;
+  }
+  
+}, 1500); 
 
 /* scroll to top */
 const rollUpBtn = document.getElementById('roll-up-btn');
